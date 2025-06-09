@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="But First Coffee - Automatize, escale e tome seu café." />
+  <title>But First Coffee</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/svg/azul_favicon.svg" />
+
+  <!-- TailwindCSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Roboto+Flex:wght@700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Manrope', sans-serif;
+    }
+    h1, h2, h3, .title {
+      font-family: 'Roboto Flex', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-[#1C1C1C]">
+  <!-- Navbar -->
+  <nav id="main-nav" class="fixed top-0 left-0 w-full z-50 bg-[#3031A3] text-white shadow transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#top">
+        <img id="logo-img" src="/assets/svg/branco_logotipo 2.svg" alt="Logo" class="h-8 transition-all duration-300">
+      </a>
+      <ul class="hidden md:flex space-x-6 text-sm font-semibold">
+        <li><a href="#sobre" class="hover:text-[#FF005C]">Quem somos</a></li>
+        <li><a href="#servicos" class="hover:text-[#FF005C]">Serviços</a></li>
+        <li><a href="#contato" class="hover:text-[#FF005C]">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="top" class="bg-[#3031A3] text-white pt-32 pb-20 px-6 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold title">Automatize. Escale. Tome seu café.</h1>
+    <p class="mt-4 text-lg">Soluções em automação e atendimento inteligente para sua empresa.</p>
+    <button class="mt-8 bg-[#FF005C] hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-xl transition-transform hover:scale-105">
+      Fale com a gente
+    </button>
+  </header>
+
+<!-- Quem Somos -->
+<section id="sobre" class="py-20 px-6 max-w-4xl mx-auto text-center">
+  <h2 class="text-3xl md:text-4xl font-bold title mb-6 text-[#3031A3]">Quem somos</h2>
+  <p class="text-gray-700 text-lg leading-relaxed">
+    Somos uma equipe apaixonada por tecnologia, automação e soluções que economizam tempo de verdade. <br class="hidden md:inline">
+    Criamos experiências digitais que funcionam — enquanto você toma seu café.
+  </p>
+</section>
+
+<!-- O que oferecemos -->
+<section id="servicos" class="py-20 px-6 bg-[#EEEEEE]">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold title mb-12 text-[#3031A3]">O que oferecemos</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all">
+        <img src="/assets/svg/azu_icon.svg" alt="Bots" class="h-8 mb-4 mx-auto">
+        <h3 class="text-lg font-bold mb-2">Bots e Assistentes Virtuais</h3>
+        <p class="text-sm text-gray-600">
+          Criamos bots para WhatsApp, Instagram e sites que atendem seus clientes automaticamente e com personalidade.
+        </p>
+      </div>
+
+      <!-- Card 2 (alto) -->
+      <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all sm:row-span-2 flex flex-col justify-center">
+        <img src="/assets/imgs/ia-esteira.png" alt="Automação"  class="h-16 mb-4 mx-auto">
+        <h3 class="text-lg font-bold mb-2">Automação de Processos</h3>
+        <p class="text-sm text-gray-600">
+          Automatize tarefas repetitivas e melhore sua produtividade com fluxos integrados e inteligentes.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all">
+        <img src="/assets/imgs/azu_icon_api.png" alt="Integrações" class="h-20 mb-4 mx-auto">
+        <h3 class="text-lg font-bold mb-2">Integrações com APIs</h3>
+        <p class="text-sm text-gray-600">
+          Conectamos ferramentas e sistemas usando APIs, webhooks e inteligência para fluxo de dados em tempo real.
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all">
+        <img src="/assets/svg/azu_icon.svg" alt="Landing Pages" class="h-8 mb-4 mx-auto">
+        <h3 class="text-lg font-bold mb-2">Landing Pages & Funnels</h3>
+        <p class="text-sm text-gray-600">
+          Páginas otimizadas para conversão com integração total aos seus sistemas de marketing e vendas.
+        </p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all">
+        <img src="/assets/imgs/azu_icon_dashboard.png" alt="Painéis e Dashboards" class="h-14 mb-4 mx-auto">
+        <h3 class="text-lg font-bold mb-2">Painéis e Dashboards</h3>
+        <p class="text-sm text-gray-600">
+          Visualize os dados do seu negócio de forma clara, com métricas automatizadas em tempo real.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IA na prática  -->
+<section class="py-20 px-6 bg-white text-[#1C1C1C]">
+  <div class="max-w-6xl mx-auto">
+
+    <!-- Título e descrição -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold title mb-4 text-[#3031A3]">Inteligência Artificial na prática</h2>
+      <p class="text-gray-700 text-lg max-w-3xl mx-auto">
+        IA não é o futuro. É o presente. E a B1st coloca ela para trabalhar por você — agora.
+      </p>
+    </div>
+
+    <!-- Layout horizontal -->
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+      <!-- Imagem -->
+      <div class="flex justify-center">
+        <img src="/assets/imgs/ia-coffee-robot.png"
+             alt="Automação e Machine Learning"
+             class="w-auto max-h-[460px] object-contain rounded-xl" />
+      </div>
+
+      <!-- Cards -->
+      <div class="grid gap-6">
+        <div class="bg-[#EEEEEE] p-8 rounded-xl shadow hover:shadow-xl">
+          <h3 class="font-semibold text-[#3031A3] mb-2">Atendimento automático</h3>
+          <p class="text-sm text-gray-700">
+            Bots que entendem o que o cliente quer, respondem com contexto e liberam sua equipe para o que importa.
+          </p>
+        </div>
+        <div class="bg-[#EEEEEE] p-8 rounded-xl shadow hover:shadow-xl">
+          <h3 class="font-semibold text-[#3031A3] mb-2">Geração de conteúdo</h3>
+          <p class="text-sm text-gray-700">
+            Automatize respostas, propostas, mensagens e textos com linguagem natural e personalizada.
+          </p>
+        </div>
+        <div class="bg-[#EEEEEE] p-8 rounded-xl shadow hover:shadow-xl">
+          <h3 class="font-semibold text-[#3031A3] mb-2">Tomada de decisão</h3>
+          <p class="text-sm text-gray-700">
+            Análise de dados, classificação de leads, priorização de tarefas — tudo orientado por IA.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- CTA Final / Contato -->
+<section id="contato" class="bg-[#1C1C1C] text-white py-16 px-6">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+    
+    <!-- Texto institucional -->
+    <div>
+      <img src="/assets/svg/branco_logotipo 2.svg" alt="Logo B1st" class="mx-auto h-8 mb-4">
+      <p class="text-sm text-gray-300">
+        A B1st é especialista em automação, bots e soluções com inteligência artificial. Nosso compromisso é transformar tarefas manuais em operações escaláveis e inteligentes.
+      </p>
+    </div>
+
+    <!-- Newsletter / Contato -->
+    <div>
+      <h3 class="font-bold text-lg mb-4">Fale com a gente</h3>
+      <p class="text-sm text-gray-300 mb-4">Envie uma mensagem ou cadastre-se para saber mais sobre nossas soluções.</p>
+      <form class="space-y-4">
+        <input
+          type="email"
+          placeholder="Digite seu e-mail"
+          class="w-full px-4 py-2 rounded-lg text-black"
+        />
+        <label class="text-sm flex items-start gap-2">
+          <input type="checkbox" class="mt-1" />
+          Eu aceito receber comunicações da B1st de acordo com meus interesses
+        </label>
+        <button type="submit" class="bg-[#FF005C] hover:bg-pink-700 text-white font-bold py-2 px-6 rounded-xl">
+          CADASTRAR
+        </button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="bg-[#1C1C1C] text-white py-10 px-6 text-center text-sm">
+    <p>&copy; 2025 But First Coffee. Todos os direitos reservados.</p>
+    <p class="mt-2 text-gray-400">Identidade visual por <a href="http://fandmworks.com" class="underline">fandmworks</a></p>
+    <p class="mt-2 text-xs text-gray-500">Desenvolvido por B1st Dev Crew ☕</p>
+    <div class="mt-6 border-t border-gray-700 pt-6 space-x-4 text-gray-400">
+      <a href="#sobre" class="hover:text-white">Sobre nós</a>
+      <a href="#" class="hover:text-white">Política de Privacidade</a>
+      <a href="#" class="hover:text-white">Termos de Uso</a>
+      <a href="#contato" class="hover:text-white">Contato</a>
+    </div>
+  </footer>
+
+  <!-- Script placeholder para JS dinâmico do header -->
+  <script>
+    // Em breve: lógica para trocar cor do header e logo ao fazer scroll
+    // Ex: mudar para bg-white e texto azul escuro, trocar logo para versão azul
+  </script>
+</body>
+
+</html>
