@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="But First Coffee - Automatize, escale e tome seu café." />
+  <title>But First Coffee</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/svg/azul_favicon.svg" />
+
+  <!-- TailwindCSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Roboto+Flex:wght@700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Manrope', sans-serif;
+    }
+    h1, h2, h3, .title {
+      font-family: 'Roboto Flex', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+    <!-- Navbar -->
+    <nav id="main-nav" class="fixed top-0 left-0 w-full z-50 bg-[#3031A3] text-white shadow transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="/">
+            <img id="logo-img" src="/assets/svg/branco_logotipo 2.svg" alt="Logo" class="h-8 transition-all duration-300">
+        </a>
+        <ul class="hidden md:flex space-x-6 text-sm font-semibold">
+            <li><a href="#sobre" class="hover:text-[#FF005C]">Quem somos</a></li>
+            <li><a href="#servicos" class="hover:text-[#FF005C]">Serviços</a></li>
+            <li><a href="#contato" class="hover:text-[#FF005C]">Contato</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <header class="bg-[#3031A3] text-white px-6 py-4 flex justify-between items-center">
+        <a href="/" class="text-xl font-bold flex items-center gap-2">
+        <img src="/assets/imgs/logo.svg" alt="But First Coffee Logo" class="h-8" />
+        BUT FIRST COFFEE
+        </a>
+        <nav class="space-x-6 hidden md:flex">
+        <a href="/" class="hover:underline">Início</a>
+        <a href="#quem-somos" class="hover:underline">Quem somos</a>
+        <a href="#contato" class="hover:underline">Contato</a>
+        </nav>
+    </header>
+
+    <main class="max-w-4xl mx-auto py-16 px-6">
+        <h1 class="text-3xl font-bold text-[#3031A3] mb-6 text-center">Política de Privacidade</h1>
+
+        <p class="mb-4">
+        A But First Coffee valoriza a privacidade e a segurança dos seus dados. Esta Política de Privacidade tem como objetivo informar como coletamos, usamos e protegemos suas informações.
+        </p>
+
+        <h2 class="text-xl font-semibold mt-8 mb-2">1. Coleta de informações</h2>
+        <p class="mb-4">
+        Podemos coletar dados pessoais como nome, e-mail, telefone, empresa, cargo e outras informações fornecidas voluntariamente por você em formulários, chatbots e interações com nossos serviços.
+        </p>
+
+        <h2 class="text-xl font-semibold mt-8 mb-2">2. Uso das informações</h2>
+        <p class="mb-4">
+        Utilizamos os dados coletados para oferecer suporte, melhorar nossos serviços, enviar comunicações e propostas comerciais, e personalizar sua experiência com nossos sistemas automatizados.
+        </p>
+
+        <h2 class="text-xl font-semibold mt-8 mb-2">3. Compartilhamento de dados</h2>
+        <p class="mb-4">
+        Não vendemos nem compartilhamos suas informações com terceiros, exceto quando necessário para prestação de serviços (como plataformas parceiras: Kommo, Manychat, entre outras) e mediante consentimento.
+        </p>
+
+        <h2 class="text-xl font-semibold mt-8 mb-2">4. Armazenamento e segurança</h2>
+        <p class="mb-4">
+        Seus dados são armazenados em ambientes seguros e protegidos por práticas modernas de segurança da informação. Apenas pessoas autorizadas têm acesso a essas informações.
+        </p>
+
+        <h2 class="text-xl font-semibold mt-8 mb-2">5. Direitos do titular</h2>
+        <p class="mb-4">
+        Você pode solicitar a correção, exclusão ou visualização de seus dados a qualquer momento, conforme previsto na Lei Geral de Proteção de Dados (LGPD). Basta enviar um e-mail para <strong>contato@butfirstcoffee.com.br</strong>.
+        </p>
+
+        <h2 class="text-xl font-semibold mt-8 mb-2">6. Alterações nesta política</h2>
+        <p class="mb-4">
+        Esta política pode ser atualizada a qualquer momento para refletir melhorias ou exigências legais. A versão mais recente estará sempre disponível nesta página.
+        </p>
+
+        <p class="mt-8 text-sm text-gray-600">Última atualização: Junho de 2025</p>
+    </main>
+
+   <!-- Footer -->
+    <footer class="bg-[#1C1C1C] text-white py-10 px-6 text-center text-sm">
+        <p>&copy; 2025 But First Coffee. Todos os direitos reservados.</p>
+        <p class="mt-2 text-gray-400">Identidade visual por <a href="http://fandmworks.com" class="underline">fandmworks</a></p>
+        <p class="mt-2 text-xs text-gray-500">Desenvolvido por B1st Dev Crew ☕</p>
+        <div class="mt-6 border-t border-gray-700 pt-6 space-x-4 text-gray-400">
+            <a href="/index.html#sobre" class="hover:text-white">Sobre nós</a>
+            <a href="/politica-de-privacidade.html" class="hover:text-white">Política de Privacidade</a>
+            <a href="/termos-de-uso.html" class="hover:text-white">Termos de Uso</a>
+            <a href="#contato" class="hover:text-white">Contato</a>
+        </div>
+    </footer>
+
+  <!-- Script placeholder para JS dinâmico do header -->
+  <script>
+    // Em breve: lógica para trocar cor do header e logo ao fazer scroll
+    // Ex: mudar para bg-white e texto azul escuro, trocar logo para versão azul
+  </script>
+</body>
+
+</body>
+</html>
+
+</body>
