@@ -17,10 +17,30 @@ const manrope = Manrope({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "But First Coffee",
-  description: "Automatize, escale e tome seu café.",
- };
+export const metadata = {
+  title: 'But First Coffee - Automação, Bots e IA para Sua Empresa',
+  description: 'Automatize processos, escale seu atendimento e economize tempo com a But First Coffee. Criamos bots, fluxos inteligentes e integrações usando IA, enquanto você toma seu café.',
+  openGraph: {
+    title: 'But First Coffee - Automação, Bots e IA para Sua Empresa',
+    description: 'Automatize processos, escale seu atendimento e economize tempo com a But First Coffee. Criamos bots, fluxos inteligentes e integrações usando IA, enquanto você toma seu café.',
+    url: 'https://butfirstcoffee.com.br',
+    siteName: 'But First Coffee',
+    images: [
+      {
+        url: 'https://butfirstcoffee.com.br/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: 'pt_BR',
+    type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
 
 export default function RootLayout({
   children,

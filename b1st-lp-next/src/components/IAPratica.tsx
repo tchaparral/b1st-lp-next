@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import iaCoffeeRobot from "@/../public/ia-coffee-robot.png";
 
 export default function IAPratica() {
@@ -18,8 +19,8 @@ export default function IAPratica() {
           </p>
         </div>
 
-        {/* Layout horizontal */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        {/* Grid imagem + cards */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-8">
 
           {/* Imagem */}
           <div className="flex justify-center">
@@ -54,6 +55,16 @@ export default function IAPratica() {
             </div>
           </div>
 
+        </div>
+
+        {/* Botão centralizado chamando o blog */}
+        <div className="text-center py-3">
+          <Link
+            href="/blog"
+            className="inline-block bg-[#FF005C] text-white font-semibold py-3 px-8 rounded-lg hover:bg-[#e60051] transition-colors"
+          >
+            Quer ver na prática? Acesse nosso blog
+          </Link>
         </div>
       </div>
     </section>

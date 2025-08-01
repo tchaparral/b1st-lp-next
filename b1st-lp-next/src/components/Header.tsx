@@ -33,6 +33,11 @@ export default function Header() {
               Serviços
             </Link>
           </li>
+            <li>
+            <Link href="/blog" className="hover:text-[#FF005C]">
+              IA na Prática
+            </Link>
+          </li>
           <li>
             <Link href="#contato" className="hover:text-[#FF005C]">
               Contato
