@@ -13,5 +13,6 @@ export default function MdxRenderer({ code }: Props) {
     <article className="prose prose-lg max-w-none">
       <Component />
     </article>
+
   );
 }

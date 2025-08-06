@@ -12,7 +12,7 @@ export const metadata = {
 export default function BlogPage() {
   const posts = allPosts
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-    .slice(0, 6); // 👈 apenas 6 posts no início
+    .slice(0, 6);
 
   return (
     <main className="bg-white pb-24">

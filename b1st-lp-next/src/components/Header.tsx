@@ -1,3 +1,5 @@
+// src/components/Header.tsx
+
 "use client";
 import Link from "next/link";
 import Image from "next/image";
@@ -14,7 +16,7 @@ export default function Header() {
           <Image
             src="/branco_logotipo.svg"
             alt="Logo"
-            width={128} // ajuste conforme desejado
+            width={128}
             height={32}
             priority
             className="h-8 w-auto transition-all duration-300"

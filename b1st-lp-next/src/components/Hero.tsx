@@ -1,4 +1,5 @@
 // src/components/Hero.tsx
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -7,7 +8,7 @@ export default function Hero() {
       className="relative h-[800px] md:h-[900px] bg-[#3031A3] text-white flex items-center justify-center text-center overflow-hidden"
     >
       {/* Imagem de fundo */}
-      <img
+      <Image
         src="/hero_section.png"
         alt="Mulher negra analisando dashboard no computador"
         className="absolute top-0 left-0 w-full h-full object-cover object-center z-0"
